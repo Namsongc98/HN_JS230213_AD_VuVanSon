@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+
+  background-color: aliceblue;
+}
+.Wapper {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #eee;
+  height: 1200px;
+}
+table {
+  margin: 0 auto;
+  width: 900px;
+  margin-top: 20px;
+  border-top: 1px solid #dddddd;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+.tr_title {
+  background-color: #297eee;
+  color: white;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+.btn_add {
+  width: 150px;
+  padding: 5px;
+  height: 30px;
+  border-radius: 4px;
+  margin: 30px;
+  cursor: pointer;
+  background-color: #297eee;
+  border: none;
+  color: white;
+}
+.btn_add:hover {
+  background-color: #036af2;
+}
+.input-Player {
+  width: 130px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  padding: 2px;
+  outline: none;
+}
+.wp_input {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Wapper_player {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fcfcfc;
+  height: 600px;
+  width: 600px;
+}
+.input_user {
+  height: 35px;
+  outline: none;
+  border-radius: 4px;
+  border: solid 1px gray;
+  background-color: #fcfcfc;
+  padding: 4px;
+}
+.please {
+  height: 35px;
+  line-height: 35px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e070ad;
+  color: #de0909;
+  padding-left: 7px;
+
+}
