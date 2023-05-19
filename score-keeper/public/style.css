@@ -91,3 +91,15 @@ th {
   padding-left: 7px;
 
 }
+.namePlayer{
+  display: flex;
+  flex-direction: column;
+  gap:16px
+}
+.input_player{
+  height: 35px;
+  border-radius: 4px;
+  border: solid 1px gray;
+  background-color: #fcfcfc;
+  padding: 4px;
+}

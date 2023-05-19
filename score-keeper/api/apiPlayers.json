@@ -1,1 +1,6 @@
-[{"id":1,"namePlayer":"mạnh cường","score":0},{"id":1,"namePlayer":"mạnh khỏe","score":0},{"namePlayer":"thế thôi heheh"}]
+[
+  { "id": 1, "namePlayer": "mạnh cường", "score": 0 },
+  { "id": 1, "namePlayer": "mạnh khỏe", "score": 0 },
+  { "namePlayer": "nam" },
+  { "namePlayer": "son" }
+]

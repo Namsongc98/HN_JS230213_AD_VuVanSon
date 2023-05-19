@@ -10,9 +10,17 @@
   <body>
     <div class="Wapper_player">
       <h1>Score Keeper</h1>
-      <div class="wp_input">
-        <input type="text" placeholder="Enter Player Name" class="input_user" id="input_user"/>
-        
+      <div class="wp_input" id="wp_input">
+        <input
+          type="text"
+          placeholder="Enter Player Name"
+          class="input_user"
+          id="input_user"
+        />
+        <div class="namePlayer" id="namePlayer">
+          
+        </div>
+
         <div class="please">Please input play name</div>
       </div>
       <button class="btn_add" onclick="handleCreate()">Create game</button>
