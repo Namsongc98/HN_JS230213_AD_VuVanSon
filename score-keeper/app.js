@@ -5,7 +5,7 @@ const fs = require("fs");
 app.use(express.static("public"));
 app.use(express.json());
 
-var bodyParser = require('body-parser')
+var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -39,19 +39,51 @@ app.get("/api/v1/players/:id", (req, res) => {
 });
 
 app.post("/api/v1/players", (req, res) => {
-  let { id, namePlayer, score } = req.body
+  let { id, namePlayer, score } = req.body;
   try {
     let playerData = JSON.parse(fs.readFileSync("./api/apiPlayers.json"));
     let player = {
-      id,
+      id: Math.floor(Math.random() * 10000000),
       namePlayer,
-      score,
+      score: [],
     };
     playerData.push(player);
     fs.writeFileSync("./api/apiPlayers.json", JSON.stringify(playerData));
     res.json({ messager: "thanh công" });
   } catch (error) {
     console.log(error);
+  }
+});
+
+app.put("/api/v1/players/:id", (req, res) => {
+
+  const { id } = req.params;
+  let { namePlayer, score } = req.body;
+  try {
+    let playerData = JSON.parse(fs.readFileSync("./api/apiPlayers.json"));
+    let findIndex = playerData.findIndex((e, i) => e.id === +id);
+    
+
+    if (findIndex === -1) {
+      res.json({
+        message: "Question not found",
+      });
+    } else {
+      console.log(findIndex);
+      playerData[findIndex] = {
+        ...playerData[findIndex],
+        namePlayer,
+        score: [],
+      };
+      fs.writeFileSync("./api/apiPlayers.json", JSON.stringify(playerData));
+      res.json({
+        message: "Question updated successfully",
+      });
+    }
+  } catch (error) {
+    res.json({
+      error,
+    });
   }
 });
 

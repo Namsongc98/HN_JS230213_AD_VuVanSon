@@ -1,6 +1,6 @@
 [
-  { "id": 1, "namePlayer": "mạnh cường", "score": 0 },
-  { "id": 1, "namePlayer": "mạnh khỏe", "score": 0 },
-  { "namePlayer": "nam" },
-  { "namePlayer": "son" }
+  { "id": 1, "namePlayer": "sonseon", "score": ["3", "3"] },
+  { "id": 2, "namePlayer": "mạnh khỏe", "score": [] },
+  { "id": 6344342, "namePlayer": "a Đức", "score": [] },
+  { "id": 7146208, "namePlayer": "Anh trường", "score": [] }
 ]
